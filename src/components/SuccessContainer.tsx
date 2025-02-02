@@ -1,4 +1,4 @@
--"use client";
+"use client";
 import { resetCart } from "@/redux/shoppersSlice";
 import { StoreState } from "@/types";
 import { useSession } from "next-auth/react";
