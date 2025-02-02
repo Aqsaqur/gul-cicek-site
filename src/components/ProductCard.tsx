@@ -5,7 +5,7 @@ import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { MdStar } from "react-icons/md";
 import FormattedPrice from "./FormattedPrice";
-// import AddToCartButton from "./AddToCartButton";
+import AddToCartButton from "./AddToCartButton";
 
 const ProductCard = ({ item }: { item: ProductData }) => {
   return (
@@ -62,7 +62,7 @@ const ProductCard = ({ item }: { item: ProductData }) => {
           </p>
         </div>
       </div>
-      {/* <AddToCartButton item={item} /> */}
+      <AddToCartButton item={item} />
     </div>
   );
 };

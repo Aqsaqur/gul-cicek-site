@@ -2,7 +2,7 @@
 
 import { MdStar } from "react-icons/md";
 import { ProductData } from "../../types";
-// import AddToCartButton from "./AddToCartButton";
+import AddToCartButton from "./AddToCartButton";
 import FormattedPrice from "./FormattedPrice";
 
 interface Props {
@@ -55,10 +55,10 @@ const ProductInfo = ({ product }: Props) => {
         {product?.description}
       </p>
       <p className="text-sm text-gray-500">Be the first to leave a review.</p>
-      {/* <AddToCartButton item={product} className="rounded-md py-3" /> */}
+      <AddToCartButton item={product} className="rounded-md py-3" />
       <p className="font-normal text-sm">
         <span className="text-base font-medium">Categories:</span> Spring
-        collection, Streetwear, Women Tags: featured SKU: N/A
+        collection
       </p>
     </div>
   );

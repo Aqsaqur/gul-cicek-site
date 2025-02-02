@@ -18,7 +18,7 @@ const Header = async () => {
             <Link
               href={item?.link}
               key={item?.link}
-              className="text-base font-semibold hover:text-darkOrange duration-300"
+              className="text-base font-semibold hover:text-darkPink duration-300"
             >
               {item?.title}
             </Link>
@@ -26,14 +26,14 @@ const Header = async () => {
           {session ? (
             <Link
               href={"/dashboard"}
-              className="text-base font-semibold hover:text-darkOrange duration-300"
+              className="text-base font-semibold hover:text-lightPink duration-300"
             >
               Dashboard
             </Link>
           ) : (
             <Link
               href={"/signin"}
-              className="text-base font-semibold hover:text-darkOrange duration-300"
+              className="text-base font-semibold hover:text-darkPink duration-300"
             >
               Sign in
             </Link>
@@ -41,7 +41,7 @@ const Header = async () => {
           {session?.user?.email === process.env.ADMIN_EMAIL && (
             <Link
               href={"/studio"}
-              className="text-base font-semibold hover:text-darkOrange duration-300"
+              className="text-base font-semibold hover:text-darkPink duration-300"
             >
               Studio
             </Link>
@@ -49,7 +49,7 @@ const Header = async () => {
           {session?.user && (
             <Link
               href={"/orders"}
-              className="text-base font-semibold hover:text-darkOrange duration-300"
+              className="text-base font-semibold hover:text-lightPink duration-300"
             >
               Orders
             </Link>

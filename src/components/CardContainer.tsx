@@ -111,14 +111,14 @@ const CartContainer = () => {
                 <button
                   onClick={createCheckout}
                   disabled={!session?.user}
-                  className="bg-lightOrange text-white hover:bg-darkOrange hoverEffect px-8 py-3 rounded-lg font-semibold disabled:bg-lightOrange/50 disabled:cursor-not-allowed"
+                  className="bg-lightPink text-white hover:bg-darkPink hoverEffect px-8 py-3 rounded-lg font-semibold disabled:bg-lightPink/50 disabled:cursor-not-allowed"
                 >
                   Proceed to Checkout
                 </button>
                 {!session?.user && (
                   <Link
                     href={"/signin"}
-                    className="text-sm font-medium text-darkOrange"
+                    className="text-sm font-medium text-darkPink"
                   >
                     Please sign in to make Checkout
                   </Link>
@@ -147,11 +147,11 @@ const CartContainer = () => {
             </h1>
             <p className="text-sm text-center px-10 -mt-2">
               Your Shopping cart lives to serve. Give it purpose - fill it with
-              books, electronics, videos, etc. and make it happy.
+              with your fav flowers and make it happy.
             </p>
             <Link
               href={"/"}
-              className="bg-lightOrange text-white hover:bg-darkOrange hoverEffect px-8 py-3 rounded-lg font-semibold"
+              className="bg-lightPink text-white hover:bg-darkPink hoverEffect px-8 py-3 rounded-lg font-semibold"
             >
               Continue Shopping
             </Link>
